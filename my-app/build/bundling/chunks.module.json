@@ -1,0 +1,77 @@
+{
+  "errors": [],
+  "warnings": [],
+  "hash": "04aeb45afa6b4ce26acc",
+  "publicPath": "/static/",
+  "outputPath": "C:\\Users\\felip\\Desktop\\Frontity\\my-app\\build\\static",
+  "assetsByChunkName": {
+    "my-app": [
+      "my-app.module.js",
+      "my-app.886b6dfedd32d7e09e51.hot-update.js"
+    ]
+  },
+  "assets": [
+    {
+      "name": "886b6dfedd32d7e09e51.hot-update.json",
+      "size": 48,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "my-app.886b6dfedd32d7e09e51.hot-update.js",
+      "size": 6221,
+      "chunks": [
+        "my-app"
+      ],
+      "chunkNames": [
+        "my-app"
+      ],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "my-app.module.js",
+      "size": 6370727,
+      "chunks": [
+        "my-app"
+      ],
+      "chunkNames": [
+        "my-app"
+      ],
+      "info": {},
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "namedChunkGroups": {
+    "my-app": {
+      "chunks": [
+        "my-app"
+      ],
+      "assets": [
+        "my-app.module.js",
+        "my-app.886b6dfedd32d7e09e51.hot-update.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "generator": "loadable-components",
+  "chunks": [
+    {
+      "id": "my-app",
+      "files": [
+        "my-app.module.js",
+        "my-app.886b6dfedd32d7e09e51.hot-update.js"
+      ]
+    }
+  ]
+}
