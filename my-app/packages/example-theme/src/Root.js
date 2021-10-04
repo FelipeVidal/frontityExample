@@ -4,7 +4,7 @@ import Switch from "@frontity/components/switch";
 
 import List from './Component/List'
 import Post from './Component/Post'
-import Page from './Component/Page'
+import Page from './Component/page'
 import Header from './Component/Header';
 const Root = ({state,libraries}) => {
   const data = state.source.get(state.router.link)
