@@ -1,17 +1,26 @@
 import React from 'react';
 import {connect} from 'frontity';
 import Link from './Link'
-const Header = () =>{
-    
 
+import Grid from '@material-ui/core/Grid'
+const Header = ({state}) =>{
+    
+    const data = state.source.get(state.router.link)
+
+    console.log(data);
     return(
-        <>
-            <Link href = '/'>Inicio</Link>//
-            <Link href = '/2021/08/20/cuatro-anos-despues/'>nature</Link>//
-            <Link href = '/cursos'>Cursos</Link>//
-        </>
-        
+      <>
+        <Grid container justifyContent = "center">
+          <Link m={3} href='/'>Home</Link>
+          <Link m={3} href='/gerro'>Perros</Link>
+          <Link m={3} href='/gato'>Gatos</Link>
+          <Link m={3} href='/dueno'>Dueños</Link>
+          
+        </Grid>
+         
+      </>
     )
+
 }
 
 export default connect(Header);

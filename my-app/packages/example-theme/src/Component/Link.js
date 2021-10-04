@@ -1,15 +1,15 @@
 import React from 'react';
 import {connect} from 'frontity';
-
+import Button from './Button';
 const Link = ({href,actions,children}) => {
     return(
-        <a href = {href}
+        <Button  m={2}  variant="contained"  color="primary" href = {href}
             onClick = { event =>{
             event.preventDefault();
             actions.router.set(href)}
             }>
             {children}
-        </a>
+        </Button>
     );
 }
 

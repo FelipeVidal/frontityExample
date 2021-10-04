@@ -1,42 +1,33 @@
 import React from 'react';
 import {connect} from 'frontity';
+import Switch from "@frontity/components/switch";
+
+import List from './Component/List'
+import Post from './Component/Post'
+import Page from './Component/Page'
 import Header from './Component/Header';
-
 const Root = ({state,libraries}) => {
-  const data = state.source.get(state.router.link);
-  const post = state.source[data.type][data.id];
-  const author = state.source.author[post.author];
-  const date = new Date(post.date);
-  console.log(data.id)
-  console.log(data.link);
-  console.log(author);
-  console.log(date);
-  const Html2React = libraries.html2react.Component;
+  const data = state.source.get(state.router.link)
 
-    return (
+  return (
+    <>
+  
+   
+        <meta name="description" content={state.frontity.description} />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+        <html lang="en" />
+     
 
-      <>
-         <Header>
-        </Header>
-         {author && <p>{author.name}</p>}
-         <b>{date.toDateString()}</b>
-         <Html2React html={post.content.rendered} />
-     </>
-      /*<>
-        <Header>
-        </Header>
-        <h1>Product Designer</h1>
-        <hr/>
-    
-        {
-          data.isHome && <p>Estamos en la home</p>
-        }
+        <Header></Header>
+      
+        <Switch>
         
-        {
-          data.isCursos && <p>Estamos en cursos</p>
-        }
-        
-      </>*/
+          <List when={data.isArchive}/>
+          <Post when={data.isPost} />
+          <Page when={data.isPage} />
+        </Switch>
+
+    </>
     );
 };
 

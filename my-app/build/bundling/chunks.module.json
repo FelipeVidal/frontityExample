@@ -1,18 +1,18 @@
 {
   "errors": [],
   "warnings": [],
-  "hash": "04aeb45afa6b4ce26acc",
+  "hash": "f685767adde8e278904e",
   "publicPath": "/static/",
   "outputPath": "C:\\Users\\felip\\Desktop\\Frontity\\my-app\\build\\static",
   "assetsByChunkName": {
     "my-app": [
       "my-app.module.js",
-      "my-app.886b6dfedd32d7e09e51.hot-update.js"
+      "my-app.d93ec42adc0f25e29709.hot-update.js"
     ]
   },
   "assets": [
     {
-      "name": "886b6dfedd32d7e09e51.hot-update.json",
+      "name": "d93ec42adc0f25e29709.hot-update.json",
       "size": 48,
       "chunks": [],
       "chunkNames": [],
@@ -23,8 +23,8 @@
       "emitted": false
     },
     {
-      "name": "my-app.886b6dfedd32d7e09e51.hot-update.js",
-      "size": 6221,
+      "name": "my-app.d93ec42adc0f25e29709.hot-update.js",
+      "size": 5069,
       "chunks": [
         "my-app"
       ],
@@ -39,7 +39,7 @@
     },
     {
       "name": "my-app.module.js",
-      "size": 6370727,
+      "size": 7946024,
       "chunks": [
         "my-app"
       ],
@@ -58,7 +58,7 @@
       ],
       "assets": [
         "my-app.module.js",
-        "my-app.886b6dfedd32d7e09e51.hot-update.js"
+        "my-app.d93ec42adc0f25e29709.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -70,7 +70,7 @@
       "id": "my-app",
       "files": [
         "my-app.module.js",
-        "my-app.886b6dfedd32d7e09e51.hot-update.js"
+        "my-app.d93ec42adc0f25e29709.hot-update.js"
       ]
     }
   ]
